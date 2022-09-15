@@ -1,7 +1,7 @@
 // carousel
 $('#owlTeam').owlCarousel({
-    loop:true,
-    margin:15,
+    loop:false,
+    margin:20,
     nav:false,
     navText: ["<i class='fas fa-chevron-left' aria-hidden='true'></i>","<i class='fas fa-chevron-right' aria-hidden='true'></i>"],
     dots:true,
@@ -14,8 +14,5 @@ $('#owlTeam').owlCarousel({
         600:{
             items:3
         },
-        1000:{
-            items:4
-        }
     }
 });

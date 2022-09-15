@@ -129,8 +129,8 @@ section.top__content{
 
 /* waves section */
 section.waves__bg{
-    padding: 4rem 0;
-
+    padding: 2rem 0;
+    background-color: #F5F8FF;
 }
 
 
@@ -320,7 +320,7 @@ section.team{
 .card{
     border: none;
     box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.12);
-    /* min-height: 320px; */
+    height: 400px;
 }
 .card-img-top{
     border-radius: 100%;
@@ -394,4 +394,13 @@ button.btnSend {
     font-weight: normal !important;
     font-size: 1em !important;
     color: #3B394A !important;
+}
+
+.owl-stage .owl-item.active{
+    max-width: 348px !important;
+}
+
+.owl-stage{
+    display: flex;
+    justify-content: center;
 }
