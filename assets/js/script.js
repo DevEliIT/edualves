@@ -77,14 +77,17 @@ $('#owlTeam').owlCarousel({
 $('#owlBanner').owlCarousel({
     loop:false,
     // margin:20,
-    nav:true,
     navText: ["<i class='fas fa-chevron-left' aria-hidden='true'></i>","<i class='fas fa-chevron-right' aria-hidden='true'></i>"],
     dots:true,
     autoplay:false,
     responsive:{
         0:{
             items:1,
-            
+            nav:false,
+        },
+        768:{
+            items:1,
+            nav:true,
         }
     }
 });

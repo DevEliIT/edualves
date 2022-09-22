@@ -33,6 +33,9 @@ body{
 .blue__text{
     color: var(--blue-color);
 }
+.yellow__text{
+    color: #FBB304;
+}
 .font-bold{
     font-weight: bold !important;
 }
@@ -136,31 +139,7 @@ section.waves__bg{
 
 
 /* QUEM SOMOS */
-section.aboutUs {
-    padding: 3rem 0;
-    background-image: url("../img/about-bg.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-/* cards landingpages */
-section.cards__landing{
-    padding: 4rem 0;
-}
-
-section.cards__landing::before{
-    content: '';
-    position: absolute;
-    top: -1em;
-    left: 0;
-    width: 116px;
-    height: 258px;
-    background-image: url("../img/landing-before.png");
-    background-size: contain;
-    z-index: 0;
-    background-repeat: no-repeat;
-}
 
 .card__content{
     background-color: #1a1a1a;
@@ -171,6 +150,7 @@ section.cards__landing::before{
     align-items: center;
     padding: 0 1em;
 }
+
 .card__content p{
     font-size: 1.1em;
 }
@@ -204,7 +184,7 @@ section.faq .rounded__btn{
 /* FOOTER */
 footer {
     padding: 2rem 0;
-    background-color: #0D0C12;
+    background-color: #202124;
 }
 
 /* MOBILE */
@@ -244,6 +224,45 @@ footer {
     }
     .items__content p:nth-child(2), .items__content p:nth-child(3) {
         margin-top: 1.5em;
+    }
+    #proposito {
+        background-image: none !important;
+    }
+    .card-body-carousel, #bouncer1, #bouncer2,#bouncer3,#bouncer4{
+        display: none !important;
+    }
+    #bouncer7{
+        position: relative;
+        top: initial !important;
+    }
+    #bouncer5 {
+        position: relative;
+        margin-bottom: 1em;
+        left: 0 !important;
+        top: 0 !important;
+    }
+    #bouncer8 {
+        right: 0 !important;
+        bottom: initial !important;
+        position: relative;
+        margin-bottom: 1em;
+        margin-left: auto;
+    }
+    #bouncer6 {
+        position: relative;
+        top: initial !important;
+        left: initial !important;
+        margin-bottom: 1em;
+    }
+    #bouncer9 {
+        bottom: initial !important;
+        position: relative;
+        left: initial !important;
+        margin-left: auto;
+        margin-bottom: 1em;
+    }
+    .question-contact{
+        padding-bottom: 5em !important; 
     }
 }
 
@@ -300,6 +319,10 @@ h4{
     font-weight: 600;
 }
 
+.bg-yellow-btn{
+    background-color: #FBB304 !important;
+}
+
 .bg-blue-btn:hover {
     color: #fff;
 }
@@ -323,11 +346,26 @@ section.team{
     background-repeat: no-repeat;
 }
 
-.card{
+.card {
     border: none;
     box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.12);
-    height: 400px;
+    min-height: 416px;
+    background-color: #0D0C12;
+    padding-bottom: 0.8em;
 }
+
+.card-body p{
+    font-size: 1.05em;
+    color: #fff;
+    text-align: center;
+}
+
+.card h4{
+    color: #0FCCEA;
+    text-align: center;
+    font-size: 1.3em !important;
+}
+
 .card-img-top{
     border-radius: 100%;
     width: 224px;
@@ -431,7 +469,7 @@ button.btnSend {
 
 .owl-theme .owl-nav button.owl-next {
     right: -4em;
-    background-color: #0FCCEA;
+    background-color: #0D0C12;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -446,7 +484,7 @@ button.btnSend {
 }
 .owl-theme .owl-nav button.owl-prev {
     left: -4em;
-    background-color: #0FCCEA;
+    background-color: #0D0C12;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -517,7 +555,7 @@ button.btnSend {
 }
 
 .question-contact{
-    background-color: #F5F8FF;
+    background-color: #202124;
     padding: 2em 0;
 }
 
@@ -546,5 +584,32 @@ button.btnSend {
     background-image: url('../img/edu-bg.png');
     padding: 2em 0;
     background-size: auto;
-    background-position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #202124;
+    min-height: 622px;
+}
+.tab-content p{
+    font-size: 1.3em;
+}
+
+.our-project{
+    background-color: #BFBFBF;
+}
+
+.btnToTop{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 1em;
+    top: -2em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.31));
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #051D33;
 }
